@@ -1,0 +1,18 @@
+<div class="container">
+  <table>
+    <tr class="row" class="row" *ngFor="let item of numElements; let idxM = index">
+      <td
+        class="position" 
+        [ngStyle]="{'width.px': sizeWindow, 'height.px': sizeWindow, 'background-color': routesGreen.includes(((idx) + (idxM * numElements.length))) ? '#f5af19' : ''}" 
+        *ngFor="let item of numElements; let idx = index"
+        [ngClass]="handlerWallsInMap((idx) + (idxM * numElements.length))">
+          <b>{{(idx) + (idxM * numElements.length)}}</b>
+      </td>
+    </tr>
+  </table>
+  <div class="inputs">
+    <input type="number" placeholder="Inicio" #start>
+    <input type="number" placeholder="Fin" #end>
+    <button (click)="getBestRoute(start.value, end.value)">Empecemos!</button>
+  </div>
+</div>

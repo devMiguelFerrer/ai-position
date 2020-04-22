@@ -1,0 +1,49 @@
+.position {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  background: #2193b0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+
+table, td, th {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.top {
+  border-top: 10px solid black;
+}
+
+.right {
+  border-right: 10px solid black;
+}
+
+.bottom {
+  border-bottom: 10px solid black;
+}
+
+.left {
+  border-left: 10px solid black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 1rem;
+}
