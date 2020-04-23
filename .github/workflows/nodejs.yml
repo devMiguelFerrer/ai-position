@@ -32,4 +32,4 @@ jobs:
         BASE_BRANCH: master
         BRACH: gh-pages
         FOLDER: dist/ai-position
-        BUILD_SCRIPT: npm i && npm run build && cp dist/ai-position/index.html dist/ai-position/404.html
+        BUILD_SCRIPT: npm i && npm run build:github && cp dist/ai-position/index.html dist/ai-position/404.html
