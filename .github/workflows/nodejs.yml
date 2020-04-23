@@ -26,3 +26,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-actions@release/v2
+      env:
+        BASE_BRANCH: master
+        BRACH: gh-pages
+        FOLDER: dist/ai-position
+        BUILD_SCRIPT: npm i && npm run build && cp dist/ai-position/index.html dist/ai-position/404.html
