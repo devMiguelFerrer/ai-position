@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:github": "ng build --base-href /ai-position/ --output-hashing=all",
-    "git": "ng build --outputPath=docs",
+    "git": "ng build --outputPath=docs --base-href /ai-position/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
